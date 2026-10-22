@@ -1,33 +1,33 @@
 {
-	"name": "orbit",
-	"version": "0.1.0",
-	"private": true,
-	"type": "module",
-	"description": "GitOps-style source build publish reconciled by Temporal",
-	"scripts": {
-		"dev": "./scripts/dev.sh",
-		"typecheck": "tsc --noEmit",
-		"lint": "biome check .",
-		"test": "vitest run",
-		"worker": "tsx src/worker.ts"
-	},
-	"dependencies": {
-		"@temporalio/activity": "^1.13.0",
-		"@temporalio/common": "^1.13.0",
-		"@temporalio/worker": "^1.13.0",
-		"@temporalio/workflow": "^1.13.0",
-		"yaml": "^2.9.1",
-		"zod": "^4.6.7"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.0.0",
-		"@temporalio/testing": "^1.13.0",
-		"@types/node": "^22.0.0",
-		"tsx": "^4.0.0",
-		"typescript": "^5.7.0",
-		"vitest": "^3.0.0"
-	},
-	"engines": {
-		"node": ">=22"
-	}
+  "name": "orbit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GitOps-style source build publish reconciled by Temporal",
+  "type": "module",
+  "scripts": {
+    "dev": "./scripts/dev.sh",
+    "lint": "biome check .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "worker": "tsx src/worker.ts"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.13.0",
+    "@temporalio/common": "^1.13.0",
+    "@temporalio/worker": "^1.13.0",
+    "@temporalio/workflow": "^1.13.0",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.0",
+    "@temporalio/testing": "^1.13.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
 }
