@@ -1,0 +1,31 @@
+{
+	"name": "orbit",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "GitOps-style source build publish reconciled by Temporal",
+	"scripts": {
+		"dev": "./scripts/dev.sh",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"test": "vitest run",
+		"worker": "tsx src/worker.ts"
+	},
+	"dependencies": {
+		"@temporalio/activity": "^1.13.0",
+		"@temporalio/common": "^1.13.0",
+		"@temporalio/worker": "^1.13.0",
+		"@temporalio/workflow": "^1.13.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.0",
+		"@temporalio/testing": "^1.13.0",
+		"@types/node": "^22.0.0",
+		"tsx": "^4.0.0",
+		"typescript": "^5.7.0",
+		"vitest": "^3.0.0"
+	},
+	"engines": {
+		"node": ">=22"
+	}
+}

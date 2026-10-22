@@ -1,0 +1,5 @@
+node_modules/
+.temporal-dev.db
+.temporal-dev.db-shm
+.temporal-dev.db-wal
+dist/

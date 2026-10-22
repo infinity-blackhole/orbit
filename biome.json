@@ -1,0 +1,8 @@
+{
+	"files": { "includes": ["**/*.ts", "**/*.js", "**/*.json"] },
+	"formatter": { "enabled": true },
+	"linter": {
+		"enabled": true,
+		"rules": { "recommended": true }
+	}
+}
