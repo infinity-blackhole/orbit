@@ -1,6 +1,8 @@
 # orbit
 
-GitOps-style source build publish, reconciled by Temporal. Desired build specs are declared in git; a Temporal workflow reconciles desired state to published artifacts — Flux, but for builds.
+GitOps-style source build publish, reconciled by Temporal. Desired build
+specs are declared in git; a Temporal workflow reconciles desired state to
+published artifacts — Flux, but for builds.
 
 ## Architecture
 
@@ -13,7 +15,8 @@ flowchart LR
     E --> A
 ```
 
-Status: PoC. Only the scaffold exists — the reconcile workflow, build/publish activities, and spec schema land in subsequent units (issues #2–#6).
+Status: PoC. Only the scaffold exists — the reconcile workflow, build/publish
+activities, and spec schema land in subsequent units (issues #2–#6).
 
 ## Dev loop
 
