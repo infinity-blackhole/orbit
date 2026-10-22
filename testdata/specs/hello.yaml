@@ -1,0 +1,4 @@
+name: hello
+source: https://github.com/shikanime-labs/orbit.git
+ref: refs/heads/main
+output: ghcr.io/shikanime-labs/hello:latest

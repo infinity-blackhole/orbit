@@ -1,0 +1,4 @@
+name: world
+source: https://github.com/shikanime-labs/wharf.git
+ref: refs/tags/v1
+output: ghcr.io/shikanime-labs/world:latest
